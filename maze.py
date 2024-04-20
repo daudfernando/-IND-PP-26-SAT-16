@@ -229,7 +229,3 @@ while run:
 
     time.delay(50)
     display.update()
-
-
-
-
