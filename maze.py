@@ -2,6 +2,8 @@
 from pygame import *
 
 
+
+
 # Parent Class
 class GameSprite(sprite.Sprite):
     # properti parent Class
@@ -17,6 +19,8 @@ class GameSprite(sprite.Sprite):
         window.blit(self.image, (self.rect.x, self.rect.y))
 
 
+
+
 # Untuk membuat hero Eater Pacman
 class Player(GameSprite):
     def __init__(
@@ -30,6 +34,8 @@ class Player(GameSprite):
         player_y_speed,
     ):
         GameSprite.__init__(self, player_image, player_x, player_y, size_x, size_y)
+
+
 
 
         self.x_speed = player_x_speed
@@ -223,5 +229,7 @@ while run:
 
     time.delay(50)
     display.update()
+
+
 
 
